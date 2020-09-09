@@ -30,7 +30,7 @@
 00000000000i[     ]   SB16 support: no
 00000000000i[     ]   USB support: no
 00000000000i[     ]   VGA extension support: vbe
-00000000000i[MEM0 ] allocated memory at 0x7f5807732010. after alignment, vector=0x7f5807733000
+00000000000i[MEM0 ] allocated memory at 0x7f183d4d5010. after alignment, vector=0x7f183d4d6000
 00000000000i[MEM0 ] 32.00MB
 00000000000i[MEM0 ] mem block size = 0x00100000, blocks=32
 00000000000i[MEM0 ] rom at 0xfffe0000/131072 ('/home/aaa/Desktop/myos/bochs/share/bochs/BIOS-bochs-latest')
@@ -40,7 +40,7 @@
 00000000000i[DEV  ] PIIX3 PCI-to-ISA bridge present at device 1, function 0
 00000000000i[     ] init_dev of 'cmos' plugin device by virtual method
 00000000000i[CMOS ] Using local time for initial clock
-00000000000i[CMOS ] Setting initial clock to: Wed Sep  9 18:59:11 2020 (time0=1599649151)
+00000000000i[CMOS ] Setting initial clock to: Wed Sep  9 19:28:43 2020 (time0=1599650923)
 00000000000i[     ] init_dev of 'dma' plugin device by virtual method
 00000000000i[DMA  ] channel 4 used by cascade
 00000000000i[     ] init_dev of 'pic' plugin device by virtual method
@@ -137,8 +137,7 @@
 00000000000i[     ] reset of 'unmapped' plugin device by virtual method
 00000000000i[     ] reset of 'biosdev' plugin device by virtual method
 00000000000i[     ] reset of 'speaker' plugin device by virtual method
-00000000000e[SPEAK] Failed to open /dev/console: Permission denied
-00000000000e[SPEAK] Deactivating beep on console
+00000000000i[SPEAK] Using /dev/console for output
 00000000000i[     ] reset of 'extfpuirq' plugin device by virtual method
 00000000000i[     ] reset of 'parallel' plugin device by virtual method
 00000000000i[     ] reset of 'serial' plugin device by virtual method
@@ -190,4 +189,6 @@
 00001600000i[XGUI ] charmap update. Font Height is 16
 00001871543i[BIOS ] ata0-0: PCHS=60/16/63 translation=none LCHS=60/16/63
 00005748749i[BIOS ] IDE time out
-00017869811p[BIOS ] >>PANIC<< No bootable device.
+00017824347i[BIOS ] Booting from 0000:7c00
+00017842533e[HD   ] calc_log_addr: out of bounds (65283/60480)
+00017842533e[HD   ] ide_read_sector() reached invalid sector 0, aborting

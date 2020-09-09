@@ -1,0 +1,21 @@
+#Bochs运行中使用的内存，设置为32M
+megs: 32
+
+#设置真实机器的BIOS和VGA BIOS
+romimage: file=/home/aaa/Desktop/bochs/share/bochs/BIOS-bochs-latest
+vgaromimage: file=/home/aaa/Desktop/bochs/share/bochs/VGABIOS-lgpl-latest
+
+#设置Bochs所使用的磁盘
+boot: disk
+
+#设置日志文件的输出
+log: bochs.out
+
+#开启或关闭某些功能，修改成你们对应的地址
+mouse: enabled=0
+keyboard_mapping: enabled=1, map=/home/aaa/Desktop/bochs/share/bochs/keymaps/x11-pc-us.map
+
+#硬盘设置
+ata0: enabled=1, ioaddr1=0x1f0, ioaddr2=0x3f0, irq=14
+ata0-master: type=disk, path="hd600M.img", mode=flat, cylinders=1219, heads=16, spt=63
+
